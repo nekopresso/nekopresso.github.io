@@ -1,0 +1,100 @@
+@import url("colors.css");
+
+body {
+  background-color: var(--base);
+  font-family: 'Comfortaa', cursive;
+}
+
+.headercontainer {
+  margin-top: 20em; /* Less aggressive top margin */
+  text-align: center; /* Keep text centered */
+}
+
+.socials {
+  display: flex;
+  gap: 1rem; /* Spacing between icons */
+  justify-content: center; /* Align icons horizontally */
+  align-items: center; /* Align icons vertically */
+  margin-top: 1em; /* Reduced top margin */
+}
+
+h1 {
+  font-size: 2.35em;
+  color: var(--text);
+}
+
+p {
+  font-size: 1.25em;
+  color: var(--text);
+  margin-bottom: 2em;
+}
+
+.bluesky, .twitch, .github {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.35em;
+  padding: 1.35em; /* Initial padding */
+  border-radius: 30px;
+  white-space: nowrap;
+  color: var(--text);
+  background-color: var(--mantle);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  height: 3.5em; /* Fixed height */
+  width: auto; /* Keep the width dynamic for text */
+  box-sizing: border-box; /* Includes padding in total size */
+}
+
+.bluesky:hover {
+  text-decoration: none;
+  color: var(--base);
+  background-color: var(--sapphire);
+  transform: scale(1.1); /* Slight scaling for hover effect */
+}
+
+.blueskyicon {
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.bluesky:hover .blueskyicon {
+  filter: brightness(100%) saturate(100%) invert(0);
+  transition: filter 0.3s ease;
+}
+
+.twitch:hover {
+  color: var(--base);
+  background-color: var(--mauve);
+  transform: scale(1.1);
+}
+
+.twitchicon {
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.twitch:hover .twitchicon {
+  filter: brightness(100%) saturate(100%) invert(0);
+  transition: filter 0.3s ease;
+}
+
+.github:hover {
+  color: var(--base);
+  background-color: var(--lavender);
+  transform: scale(1.1);
+}
+
+.githubicon {
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.github:hover .githubicon {
+  filter: brightness(100%) saturate(100%) invert(0);
+  transition: filter 0.3s ease;
+}
